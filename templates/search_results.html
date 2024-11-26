@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .result {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        h2 {
+            color: #333;
+        }
+        .distance {
+            color: gray;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Results for: "{{ query }}"</h1>
+
+        <!-- LLM Response -->
+        <div class="result">
+            <h2>LLM Response</h2>
+            <p>{{ llm_response }}</p>
+        </div>
+
+        <!-- Relevant Chunks from Documents -->
+        <h2>Related Document Chunks</h2>
+        {% for result in results %}
+            <div class="result">
+                <h3>Document ID: {{result}}</h3>
+                <!-- <p class="distance">Similarity Score: {{ result.distance }}</p> -->
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

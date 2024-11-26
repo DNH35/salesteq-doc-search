@@ -1,0 +1,13 @@
+Flask
+langchain
+langchain-community
+langchain-nvidia-ai-endpoints
+python-docx
+PyMuPDF
+Pillow
+requests
+python-dotenv
+openai
+pypdf
+fire
+qdrant_client

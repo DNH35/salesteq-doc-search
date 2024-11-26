@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form {
+            margin-bottom: 40px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Document Search Engine</h1>
+
+        <!-- Form to add documents -->
+        <!-- <form action="/add_document" method="POST">
+            <h2>Add a Document</h2>
+            <input type="text" name="doc_id" placeholder="Document ID" required>
+            <textarea name="document" placeholder="Enter your document content here..." rows="5" required></textarea>
+            <button type="submit">Add Document</button>
+        </form> -->
+        <!-- <form action="/upload_folder" method="POST" enctype="multipart/form-data">
+            <input type="file" name="folder_zip" accept=".zip">
+            <input type="submit" value="Upload Folder">
+        </form> -->
+        <form action="/upload_folder" method="POST" enctype="multipart/form-data">
+            <input type="file" name="documents" multiple>
+            <input type="submit" value="Upload Files">
+        </form>
+        
+        
+        <!-- Form to search documents -->
+        <form action="/search" method="GET">
+            <h2>Search for Information</h2>
+            <input type="text" name="query" placeholder="Enter your search query..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
