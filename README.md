@@ -31,5 +31,3 @@ QDRANT_HOST=<your_host_link_here>
 ```bash
 python salesteq_doc_search.py input-directory
 ```
-
-In order to run lc_agent_doc_search.py, copy and paste the file into the lc-agent repo and run it from there
