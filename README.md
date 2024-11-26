@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Flask-based web application uses Langchain and NVIDIA AI to provide a document and image-based retrieval system. It allows users to upload PDF documents, extract text, tables, images, and generate a vector store for querying via a question-answering system. The app utilizes Qdrant for vector storage and retrieval, and NVIDIA's AI models for processing and summarizing images in the documents.
+This Flask-based web application uses Qdrant, Langchain and NVIDIA AI to provide a document and image-based retrieval system. It allows users to upload PDF documents, extract text, tables, images, and generate a vector store for querying via a question-answering system. The app utilizes Qdrant for vector storage and retrieval, and NVIDIA's AI models for processing and summarizing images in the documents.
 
 ## Prerequisites
 First, clone the repo
