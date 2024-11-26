@@ -27,6 +27,7 @@ QDRANT_API_KEY=<your_api_key_here>
 QDRANT_HOST=<your_host_link_here>
  ```
 
+API_KEY can be generated from https://build.nvidia.com/explore/discoverhttps://build.nvidia.com/explore/discover
 ### Running the script
 ```bash
 python salesteq_doc_search.py input-directory
